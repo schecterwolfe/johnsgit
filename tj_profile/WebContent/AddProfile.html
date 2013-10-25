@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add new trainer profile</title>
+</head>
+<body>
+<h1>Add a new Canine trainer profile form..</h1>
+<form name="add_form"  method="post" action="AddNewProfile_M.php" enctype="multipart/form-data">
+Trainer name <input type="text" name="name"><br>
+Add Trainer Photo <input type="file" name="photo" id="photo"><br>
+Trainer email <input type="email" name="email"><br>
+Gender <input type="radio" name="sex" value="male">Male      <input type="radio" name="sex" value="female">Female<br>
+Days Available<br>
+<input type="checkbox" name="available[]" value="mon">Monday     
+<input type="checkbox" name="available[]" value="tue">Tuesday     
+<input type="checkbox" name="available[]" value="wed">Wednesday     
+<input type="checkbox" name="available[]" value="thr">Thursday     
+<input type="checkbox" name="available[]" value="fri">Friday     
+<input type="checkbox" name="available[]" value="sat">Saturday     
+<input type="checkbox" name="available[]" value="sun">Sunday<br>
+Experience<br>
+<select name="exp">
+<option value="0-.5">0 - 6 months</option>
+<option value=".5-1">6 months - 1 year</option>
+<option value="1-3">1 - 3 years</option>
+<option value="3-7">3 - 7 years</option>
+<option value="7+">7+  years</option>
+</select><br>
+Additional Information<br>
+<textarea name="trainer_description" rows="20" cols="80" ></textarea><br>
+<button type="submit" value="Submit">Submit</button>
+<button type="reset" value="Reset">Reset</button>
+</form>
+</body>
+</html>
